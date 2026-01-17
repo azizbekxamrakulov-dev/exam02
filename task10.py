@@ -1,0 +1,11 @@
+def sort_numbers(numbers: list, reverse: bool = False) -> list:
+    if reverse:
+        return sorted(numbers, reverse=True)
+    
+    return sorted(numbers)
+
+print(sort_numbers([3, 7, 10, -5, -8, 15, 22, 0]))
+# [-8, -5, 0, 3, 7, 10, 15, 22]
+
+print(sort_numbers([3, 7, 10, -5], reverse=True))
+# [10, 7, 3, -5]
